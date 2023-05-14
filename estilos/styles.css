@@ -1,0 +1,154 @@
+html, body{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: rgb(216, 170, 111);
+}
+
+#contenedor-dashboard{
+    background-color: beige;
+}
+#contenedor-opciones-dashboard{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    font-size: 60px;
+    padding: 10% 0;
+
+}
+.boton-opcion{
+    padding: 5em;
+    background-color: azure;
+    font-size: 1rem;
+
+}
+
+.contenedor-formulario-entrada{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+}
+#registro-entrada{
+    /* justify-content: center; */
+    border: 3px solid rgb(228, 219, 170);
+    border-style: outset;
+    background-color: burlywood;
+    margin: 0 19%;
+    padding: 3%;
+    text-align: left;
+
+}
+
+.form > label{
+    margin-left: 5%;
+}
+
+.form{
+    display: grid;
+    padding:  0 12%;
+    margin-bottom: 3%;
+
+}
+
+.form > input{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.contenedor-registro-salidas{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid rgb(228, 219, 170);
+    border-style: outset;
+    background-color: burlywood;
+    margin: 0 19%;
+    padding: 3%;
+    margin-top: 10%;
+
+}
+.contenedor-formulario-salida{
+    text-align: left;
+}
+.table-responsive > table{
+    background-color: rgb(201, 160, 108);
+
+
+}
+.contenedor-mostrar-entrada{
+    margin: 5% auto 0;
+    justify-content: center;
+}
+#titulo-h1-mostrar-entrada{
+    margin-left: 5%;
+}
+#titulo-h1-mostrar-salida{
+    margin-left: 5%;
+}
+
+.contenedor-mostrar-salida{
+    margin: 5% auto 0;
+    justify-content: center;
+
+}
+
+.contenedor-tablas{
+    
+}
+#salidas{
+    margin: 5% auto 0;
+}
+.contenedor-tablas{
+    padding: 0;
+    text-align: center;
+}
+
+.contenedor-mostrar-balance{
+    text-align: center;
+    text-align: center;
+    /* margin: 5% 7% 3%; */
+    margin: 5% min(7%, 3em) 3%;
+}
+
+.balance-total{
+    box-sizing: content-box;
+    width: 100%;
+    /* font-size: min(100vw, 30%); */
+    /* padding: 10%; */
+    /* font-size: 100%; */
+}
+
+.contenedor-balance-total{
+    border: 2px outset rgb(177, 127, 71);
+    background-color: rgb(197, 149, 95);
+    box-sizing: border-box;
+    padding: 2% 0.5em;
+    width: 50%;
+    margin: 0 auto;
+    /* margin: 0 50%; */
+    
+}
+
+#login-contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    
+}
+
+.contenedor-formulario-login{
+    padding: 3% 4%;
+    display: grid;
+    margin: 0 auto;
+    border: 2px outset rgb(226, 184, 92);
+    background-color: antiquewhite;
+
+}
+#login>*{
+    display: grid;
+}
