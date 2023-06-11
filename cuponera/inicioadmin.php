@@ -14,7 +14,7 @@
         <div id="contenedor-opciones-dashboard">
             <div id="opcion-registrar-entrada">
                 <button class="boton-opcion">
-                    <a href="./registrarEntrada.php">Registrar empresa</a>
+                    <a href="./registrarempresa.php">Registrar empresa</a>
                 </button>
             </div>
             <div id="opcion-registrar-salida">
@@ -29,12 +29,12 @@
             </div>
             <div id="opcion-ver-salidas">
                 <button class="boton-opcion">
-                    <a href="./mostrarsalida.php">Ver empresas</a>
+                    <a href="./mostrarcupones.php">Ver cupones</a>
                 </button>
             </div>
             <div id="opcion-mostrar-balance">
                 <button class="boton-opcion">
-                    <a href="./mostrarBalance.php">Mostrar cupones</a>
+                    <a href="./mostrarcupones.php">Mostrar cupones</a>
                 </button>
             </div>
             <!-- <div id="opcion-registrar-entrada"></div> -->

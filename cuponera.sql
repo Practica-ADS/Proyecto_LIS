@@ -88,18 +88,18 @@ ENGINE = InnoDB;
 -- Table `cuponera`.`Comprados`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `cuponera`.`Comprados` (
-  `idCompra` INT NOT NULL,
-  `idOfertas` VARCHAR(45) NULL,
+  `idOfertas` INT NOT NULL AUTO_INCREMENT,
   `titulo` VARCHAR(45) NULL,
-  `precio_regular` VARCHAR(45) NULL,
-  `precio_oferta` VARCHAR(45) NULL,
   `fecha_compra` DATE NULL,
   `cantidad_cupones` VARCHAR(45) NULL,
   `idClientes` VARCHAR(45) NULL,
+  `n°tarjeta` VARCHAR(45) NULL,
+  `fecha_vencimiento` VARCHAR(45) NULL,
+  `cvv` VARCHAR(45) NULL,
   `ofertas_idOfertas` INT NOT NULL,
   `ofertas_Empresas_NITempresa` INT NOT NULL,
   `clientes_idClientes` INT NOT NULL,
-  PRIMARY KEY (`idCompra`, `ofertas_idOfertas`, `ofertas_Empresas_NITempresa`, `clientes_idClientes`),
+  PRIMARY KEY (`idOfertas`, `ofertas_idOfertas`, `ofertas_Empresas_NITempresa`, `clientes_idClientes`),
   INDEX `fk_Comprados_ofertas1_idx` (`ofertas_idOfertas` ASC, `ofertas_Empresas_NITempresa` ASC),
   INDEX `fk_Comprados_clientes1_idx` (`clientes_idClientes` ASC),
   CONSTRAINT `fk_Comprados_ofertas1`

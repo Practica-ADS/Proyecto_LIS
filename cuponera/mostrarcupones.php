@@ -14,21 +14,21 @@
     <div class="container contenedor-mostrar-entrada">
         <div class="row">
             <div class="col-md-12">
-                <h1 id="titulo-h1-mostrar-entrada">Buscar cupones em oferta</h1>
+                <h1 id="titulo-h1-mostrar-entrada">Cupones en oferta</h1>
                 <br>
                 <div class="table-responsive">
                     <table class="table table-stripped table-bordered table-hover" id="tabla-principal-entrada-vista">
                         <thead class="dark">
                             <tr>
                                 <th>idOfertas</th>
-                                <th>correo</th>
-                                <th>usuario</th>
-                                <th>contrasena</th>
-                                <th>nombre</th>
-                                <th>apellido</th>
-                                <th>dui</th>
-                                <th>fecha de nacimiento</th>
-
+                                <th>titulo</th>
+                                <th>precio_regular</th>
+                                <th>precio_oferta</th>
+                                <th>fecha_inicio</th>
+                                <th>fecha_final</th>
+                                <th>fecha_limite</th>
+                                <th>cantidad_cupones</th>
+                                <th>descripcion</th>
 
                             </tr>
                         </thead>
@@ -39,19 +39,20 @@
 
                             $database = new conexion();
                             $dbconnection = $database->create_conection();
-                            $sql = "SELECT * FROM clientes order by idClientes ASC";
+                            $sql = "SELECT * FROM cupones order by idOfertas ASC";
                             $result = $dbconnection->query($sql);
                             if ($result->rowCount() > 0) {
                                 foreach ($result as $fila) {
                                     echo "<tr>";
-                                    echo "<td>" . $fila["idClientes"] . "</td>";
-                                    echo "<td>" . $fila["correo"] . "</td>";
-                                    echo "<td>" . $fila["usuario"] . "</td>";
-                                    echo "<td>" . $fila["contrasena"] . "</td>";
-                                    echo "<td>" . $fila["nombre"] . "</td>";
-                                    echo "<td>" . $fila["apellido"] . "</td>";
-                                    echo "<td>" . $fila["dui"] . "</td>";
-                                    echo "<td>" . $fila["fecha_de_nacimiento"] . "</td>";
+                                    echo "<td>" . $fila["idOfertas"] . "</td>";
+                                    echo "<td>" . $fila["titulo"] . "</td>";
+                                    echo "<td>" . $fila["precio_regular"] . "</td>";
+                                    echo "<td>" . $fila["precio_oferta"] . "</td>";
+                                    echo "<td>" . $fila["fecha_inicio"] . "</td>";
+                                    echo "<td>" . $fila["fecha_final"] . "</td>";
+                                    echo "<td>" . $fila["fecha_limite"] . "</td>";
+                                    echo "<td>" . $fila["cantidad_cupones"] . "</td>";
+                                    echo "<td>" . $fila["descripcion"] . "</td>";
                                     echo "</tr>";
                                 }
                             } else {
